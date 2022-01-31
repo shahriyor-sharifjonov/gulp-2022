@@ -1,1 +1,17 @@
 // Тема по умолчанию
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: sans-serif;
+    &:focus,
+    &:active{
+        outline: none;
+    }
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
