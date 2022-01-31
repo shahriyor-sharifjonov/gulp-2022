@@ -10,6 +10,18 @@
         outline: none;
     }
 }
+html,
+body{
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    .main{
+        flex: 1 1 auto;
+    }
+}
 button{
     background: none;
     border: none;

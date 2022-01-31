@@ -46,3 +46,18 @@ $break-point in $sizes {
     width: $width;
     height: $height;
 }
+
+@mixin abs-position ($top: 0, $left: 0, $right: auto, $bottom: auto) {
+    position: absolute; 
+    right: $right;
+    bottom: $bottom;
+    @if $top == 50% and $left == 50%{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @else {
+        top: $top;
+        left: $left;
+    }
+}
